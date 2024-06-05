@@ -38,6 +38,25 @@
                             </div>
                         `;
                         leaderboard.appendChild(li);
+
+                        // Check for overlap and hide progress text if necessary
+                        const progressBar = li.querySelector('.progress-bar');
+                        const levelLabel = li.querySelector('.level-label');
+                        const progressText = li.querySelector('.progress-text');
+
+                        const checkOverlap = () => {
+                            const levelLabelRect = levelLabel.getBoundingClientRect();
+                            const progressTextRect = progressText.getBoundingClientRect();
+
+                            if (progressTextRect.left < levelLabelRect.right + 10) { // 10px buffer
+                                progressText.classList.add('hidden');
+                            } else {
+                                progressText.classList.remove('hidden');
+                            }
+                        };
+
+                        checkOverlap(); // Initial check
+                        window.addEventListener('resize', checkOverlap); // Check on window resize
                     });
                 })
                 .catch(error => console.error('Error loading leaderboard data:', error));
