@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f0f2f5, #dfe4ea);
     color: #343a40;
     display: flex;
     justify-content: center;
@@ -24,6 +24,7 @@ h1 {
     margin-bottom: 25px;
     font-size: 2.5em;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .leaderboard {
@@ -36,17 +37,35 @@ h1 {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px solid #e9ecef;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #eaf4fc; /* Subtle light blue background for other users */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.leaderboard li:last-child {
-    border-bottom: none;
+.leaderboard li:first-child {
+    background: linear-gradient(135deg, #ffd700, #ffecb3, #ffd700); /* Gold gradient */
+    background-size: 200% 200%;
+    animation: shine 3s linear infinite;
+}
+
+.leaderboard li:nth-child(2) {
+    background: linear-gradient(135deg, #c0c0c0, #e0e0e0, #c0c0c0); /* Silver gradient */
+    background-size: 200% 200%;
+    animation: shine 3s linear infinite;
+}
+
+.leaderboard li:nth-child(3) {
+    background: linear-gradient(135deg, #cd7f32, #e3a76e, #cd7f32); /* Bronze gradient */
+    background-size: 200% 200%;
+    animation: shine 3s linear infinite;
 }
 
 .leaderboard li:hover {
     background-color: #f1f3f5;
     transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .rank {
@@ -74,9 +93,17 @@ h1 {
     font-size: 1.4em;
     font-weight: bold;
     color: #495057;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .stats {
     font-size: 1em;
     color: #868e96;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
