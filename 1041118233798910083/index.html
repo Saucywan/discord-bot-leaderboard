@@ -21,12 +21,20 @@
                     const leaderboard = document.getElementById('leaderboard');
                     data.forEach((user, index) => {
                         const li = document.createElement('li');
+                        // Calculate progress percentage
+                        const progress = (user.xp / user.total_xp) * 100;
                         li.innerHTML = `
                             <div class="rank">${index + 1}</div>
                             <img src="${user.avatar_url}" alt="${user.username} Avatar" class="avatar">
                             <div class="details">
-                                <span class="username">${user.username}</span><br>
-                                <span class="stats">Level ${user.level} | XP: ${user.xp}</span>
+                                <span class="username">${user.username}</span>
+                                <div class="progress-bar">
+                                    <div class="level-label">Level</div> <!-- Level label -->
+                                    <div class="level">${user.level}</div> <!-- Level number -->
+                                    <div class="progress" style="width: ${progress}%">
+                                        <span class="progress-text">${progress.toFixed(1)}%</span>
+                                    </div>
+                                </div>
                             </div>
                         `;
                         leaderboard.appendChild(li);
