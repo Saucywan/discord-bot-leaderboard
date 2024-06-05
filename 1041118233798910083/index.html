@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>Leaderboard</h1>
+        <ul id="leaderboard" class="leaderboard">
+            <!-- Leaderboard data will be populated here by JavaScript -->
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const leaderboard = document.getElementById('leaderboard');
+                    data.forEach((user, index) => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            <div class="rank">${index + 1}</div>
+                            <img src="${user.avatar_url}" alt="${user.username} Avatar" class="avatar">
+                            <div class="details">
+                                <span class="username">${user.username}</span><br>
+                                <span class="stats">Level ${user.level} | XP: ${user.xp}</span>
+                            </div>
+                        `;
+                        leaderboard.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error loading leaderboard data:', error));
+        });
+    </script>
+</body>
+</html>
