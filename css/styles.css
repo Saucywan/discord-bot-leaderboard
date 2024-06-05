@@ -36,27 +36,34 @@ h1 {
 .leaderboard li {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space between username and level */
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
     background-color: #eaf4fc; /* Subtle light blue background for other users */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
+.leaderboard li:nth-child(n+4) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Custom box shadow for users below 3rd place */
+}
+
 .leaderboard li:first-child {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     background: linear-gradient(135deg, #ffd700, #ffecb3, #ffd700); /* Gold gradient */
     background-size: 200% 200%;
     animation: shine 3s linear infinite;
 }
 
 .leaderboard li:nth-child(2) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #c0c0c0, #e0e0e0, #c0c0c0); /* Silver gradient */
     background-size: 200% 200%;
     animation: shine 3s linear infinite;
 }
 
 .leaderboard li:nth-child(3) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #cd7f32, #e3a76e, #cd7f32); /* Bronze gradient */
     background-size: 200% 200%;
     animation: shine 3s linear infinite;
@@ -73,6 +80,25 @@ h1 {
     font-weight: bold;
     color: #6c757d;
     margin-right: 15px;
+    border-radius: 10px; /* Rounded corners for the position number */
+    background-color: #f0f0f0; /* Default background color for the position number */
+    padding: 5px 10px; /* Padding around the position number */
+}
+
+/* Add custom styles for top three positions */
+.leaderboard li:nth-child(1) .rank {
+    background-color: #ffd700; /* Gold color for the 1st position */
+    animation: shine 1s linear infinite; /* Shiny effect */
+}
+
+.leaderboard li:nth-child(2) .rank {
+    background-color: #c0c0c0; /* Silver color for the 2nd position */
+    animation: shine 1s linear infinite; /* Shiny effect */
+}
+
+.leaderboard li:nth-child(3) .rank {
+    background-color: #cd7f32; /* Bronze color for the 3rd position */
+    animation: shine 1s linear infinite; /* Shiny effect */
 }
 
 .avatar {
@@ -96,10 +122,66 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.stats {
+.level {
+    color: #fff; /* Changed level text color to white */
+    font-size: 20px; /* Increased font size for the level number */
+    font-weight: bold; /* Make the level number bold */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
+    position: absolute; /* Position the level number */
+    top: 50%; /* Center vertically */
+    left: 45px; /* Adjusted left position */
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure the number is above the progress bar */
+}
+
+.level-label {
+    color: #fff; /* Color for the level label */
+    font-size: 14px; /* Font size for the level label */
+    margin-right: 5px; /* Add some margin between label and number */
+    position: absolute; /* Position the level label */
+    top: 50%; /* Center vertically */
+    left: 10px; /* Adjusted left padding */
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure the label is above the progress bar */
+}
+
+.xp {
     font-size: 1em;
-    color: #868e96;
+    color: #3A3937;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px; /* Increased height for better visibility */
+    background-color: #ddd;
+    border-radius: 15px; /* Increased border radius for a smoother appearance */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px; /* Increased margin for better separation between items */
+    margin-top: 5px; /* Move the progress bar down */
+}
+
+.progress {
+    height: 100%;
+    background-color: #2CA6D6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.progress-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    padding-right: 10px; /* Increased padding for better alignment */
+    z-index: 2;
 }
 
 @keyframes shine {
