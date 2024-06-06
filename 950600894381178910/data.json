@@ -1,0 +1,30 @@
+[
+    {
+        "username": "Doomblade101",
+        "avatar_url": "https://cdn.discordapp.com/avatars/463070464210763776/0db2721685d90fb519d726861c8c0eb3.png?size=1024",
+        "level": 3,
+        "xp": 20,
+        "total_xp": 116
+    },
+    {
+        "username": "Kyrncion",
+        "avatar_url": "https://cdn.discordapp.com/avatars/803402194882658314/c6765d38cc94946a6081f330ff0d6db5.png?size=1024",
+        "level": 3,
+        "xp": 0,
+        "total_xp": 116
+    },
+    {
+        "username": "Corpseghosts",
+        "avatar_url": "https://cdn.discordapp.com/avatars/428712857438257152/c7d0390b2db3330f9706246065ae5184.png?size=1024",
+        "level": 1,
+        "xp": 30,
+        "total_xp": 105
+    },
+    {
+        "username": "Saucywan",
+        "avatar_url": "https://cdn.discordapp.com/avatars/239818539874254848/a_5eb4b341b5c556abf459ca2132c26263.gif?size=1024",
+        "level": 1,
+        "xp": 30,
+        "total_xp": 105
+    }
+]
