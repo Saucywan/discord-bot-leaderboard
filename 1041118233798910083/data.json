@@ -3,21 +3,21 @@
         "username": "Saucywan",
         "avatar_url": "https://cdn.discordapp.com/avatars/239818539874254848/a_5eb4b341b5c556abf459ca2132c26263.gif?size=1024",
         "level": 17,
-        "xp": 30,
+        "xp": 100,
         "total_xp": 799
     },
     {
         "username": "Lyraclx",
-        "avatar_url": "https://cdn.discordapp.com/avatars/1214647258247860234/0902376e64cc3324d9708ce19671332c.png?size=1024",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1214647258247860234/7572cd33bb8462dc88c110fec5b4a8ee.png?size=1024",
         "level": 14,
-        "xp": 130,
+        "xp": 190,
         "total_xp": 380
     },
     {
         "username": "Kyrncion",
         "avatar_url": "https://cdn.discordapp.com/avatars/803402194882658314/c6765d38cc94946a6081f330ff0d6db5.png?size=1024",
         "level": 11,
-        "xp": 140,
+        "xp": 230,
         "total_xp": 286
     },
     {
@@ -35,6 +35,13 @@
         "total_xp": 111
     },
     {
+        "username": "Saucybot",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1040784494875115530/b98efd01371bd1e36db74beffccc04ef.png?size=1024",
+        "level": 1,
+        "xp": 30,
+        "total_xp": 105
+    },
+    {
         "username": "Saucywaniscool",
         "avatar_url": "https://cdn.discordapp.com/avatars/854783966639947866/fae2dcb4495b8aab8ea687479cbace12.png?size=1024",
         "level": 1,
@@ -46,13 +53,6 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/509166062168965124/2164341bf4348c7030b4e73e126a18d9.png?size=1024",
         "level": 0,
         "xp": 90,
-        "total_xp": 100
-    },
-    {
-        "username": "Saucybot",
-        "avatar_url": "https://cdn.discordapp.com/avatars/1040784494875115530/b98efd01371bd1e36db74beffccc04ef.png?size=1024",
-        "level": 0,
-        "xp": 40,
         "total_xp": 100
     }
 ]
