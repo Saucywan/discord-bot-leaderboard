@@ -3,7 +3,7 @@
         "username": "Saucywan",
         "avatar_url": "https://cdn.discordapp.com/avatars/239818539874254848/a_5eb4b341b5c556abf459ca2132c26263.gif?size=1024",
         "level": 17,
-        "xp": 410,
+        "xp": 460,
         "total_xp": 799
     },
     {
@@ -16,9 +16,9 @@
     {
         "username": "Lawilett",
         "avatar_url": "https://cdn.discordapp.com/avatars/415360044356468757/e0c8a068177c549188c03a33a736c5a5.png?size=1024",
-        "level": 7,
-        "xp": 140,
-        "total_xp": 141
+        "level": 8,
+        "xp": 0,
+        "total_xp": 148
     },
     {
         "username": "Geniux",
@@ -39,6 +39,13 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/509166062168965124/2164341bf4348c7030b4e73e126a18d9.png?size=1024",
         "level": 0,
         "xp": 90,
+        "total_xp": 100
+    },
+    {
+        "username": "Lyraclx",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1214647258247860234/7572cd33bb8462dc88c110fec5b4a8ee.png?size=1024",
+        "level": 0,
+        "xp": 30,
         "total_xp": 100
     }
 ]
