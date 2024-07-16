@@ -2,23 +2,23 @@
     {
         "username": "Saucywan",
         "avatar_url": "https://cdn.discordapp.com/avatars/239818539874254848/a_5eb4b341b5c556abf459ca2132c26263.gif?size=1024",
-        "level": 2,
-        "xp": 20,
-        "total_xp": 111
+        "level": 3,
+        "xp": 0,
+        "total_xp": 116
     },
     {
         "username": "Foxxinparadox",
         "avatar_url": "https://cdn.discordapp.com/avatars/840599160373379113/87bddde7ab73af31790184e6713a5212.png?size=1024",
-        "level": 1,
-        "xp": 80,
-        "total_xp": 105
+        "level": 2,
+        "xp": 110,
+        "total_xp": 111
     },
     {
         "username": "Hunter035452",
         "avatar_url": "https://cdn.discordapp.com/avatars/1242106212007546962/4dd5078ee5be870638a3258c74183f67.png?size=1024",
-        "level": 0,
-        "xp": 90,
-        "total_xp": 100
+        "level": 1,
+        "xp": 50,
+        "total_xp": 105
     },
     {
         "username": "Milk_luver1313",
@@ -45,7 +45,7 @@
         "username": "Onethinguforget",
         "avatar_url": "https://cdn.discordapp.com/avatars/569749504975175680/9c28aed2d96f410589a8131b87c45248.png?size=1024",
         "level": 0,
-        "xp": 30,
+        "xp": 50,
         "total_xp": 100
     },
     {
@@ -56,8 +56,15 @@
         "total_xp": 100
     },
     {
-        "username": "Tommyboy2003",
-        "avatar_url": "https://cdn.discordapp.com/avatars/517039027044745216/0e7325f22486bf06dd3e99bb8d2c2f97.png?size=1024",
+        "username": "Thebestjiff",
+        "avatar_url": "https://cdn.discordapp.com/avatars/608922426893402123/8d09fb436c3ef2d8c6fda1b996b7b30e.png?size=1024",
+        "level": 0,
+        "xp": 30,
+        "total_xp": 100
+    },
+    {
+        "username": "Chip",
+        "avatar_url": "https://cdn.discordapp.com/avatars/614109280508968980/c3034a729ea702c79c86cb4a5ab6eb1c.png?size=1024",
         "level": 0,
         "xp": 10,
         "total_xp": 100
