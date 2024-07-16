@@ -2,16 +2,23 @@
     {
         "username": "Saucywan",
         "avatar_url": "https://cdn.discordapp.com/avatars/239818539874254848/a_5eb4b341b5c556abf459ca2132c26263.gif?size=1024",
-        "level": 1,
-        "xp": 50,
-        "total_xp": 105
+        "level": 2,
+        "xp": 20,
+        "total_xp": 111
     },
     {
         "username": "Foxxinparadox",
         "avatar_url": "https://cdn.discordapp.com/avatars/840599160373379113/87bddde7ab73af31790184e6713a5212.png?size=1024",
         "level": 1,
-        "xp": 20,
+        "xp": 80,
         "total_xp": 105
+    },
+    {
+        "username": "Hunter035452",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1242106212007546962/4dd5078ee5be870638a3258c74183f67.png?size=1024",
+        "level": 0,
+        "xp": 90,
+        "total_xp": 100
     },
     {
         "username": "Milk_luver1313",
@@ -24,14 +31,14 @@
         "username": "Miatainparadise",
         "avatar_url": "https://cdn.discordapp.com/avatars/504786122325622785/e484e3e4d2193028d469bcdfc76bc9ce.png?size=1024",
         "level": 0,
-        "xp": 50,
+        "xp": 60,
         "total_xp": 100
     },
     {
-        "username": "Hunter035452",
-        "avatar_url": "https://cdn.discordapp.com/avatars/1242106212007546962/4dd5078ee5be870638a3258c74183f67.png?size=1024",
+        "username": "Michael_san1",
+        "avatar_url": "https://cdn.discordapp.com/avatars/999045187101802496/4b9117d231bd3ee69cbd06a20fbaecf3.png?size=1024",
         "level": 0,
-        "xp": 40,
+        "xp": 60,
         "total_xp": 100
     },
     {
@@ -49,10 +56,10 @@
         "total_xp": 100
     },
     {
-        "username": "Michael_san1",
-        "avatar_url": "https://cdn.discordapp.com/avatars/999045187101802496/4b9117d231bd3ee69cbd06a20fbaecf3.png?size=1024",
+        "username": "Tommyboy2003",
+        "avatar_url": "https://cdn.discordapp.com/avatars/517039027044745216/0e7325f22486bf06dd3e99bb8d2c2f97.png?size=1024",
         "level": 0,
-        "xp": 30,
+        "xp": 10,
         "total_xp": 100
     }
 ]
